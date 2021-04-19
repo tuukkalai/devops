@@ -1,0 +1,7 @@
+› d ps -a
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+
+› d images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+
+› exit

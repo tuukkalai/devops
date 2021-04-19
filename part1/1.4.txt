@@ -1,0 +1,30 @@
+› d run -it --name search ubuntu sh -c 'echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://[7m$[7mwebsite;'
+Input website:
+helsinki.fi
+Searching..
+sh: 1: curl: not found
+
+› d ps a
+CONTAINER ID        IMAGE               COMMAND                   CREATED             STATUS                       PORTS               NAMES
+8d1e9d07b550        ubuntu              "sh -c 'echo \"Input …"   14 seconds ago      Exited (127) 8 seconds ago                       search
+› d container start search
+search
+
+› d ps -a
+CONTAINER ID        IMAGE               COMMAND                   CREATED             STATUS              PORTS               NAMES
+8d1e9d07b550        ubuntu              "sh -c 'echo \"Input …"   28 seconds ago      Up 4 seconds                            search
+› d exec -d -it search sh -c 'apt update && apt install -y curl'
+
+› d exec -it search sh -c 'echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'
+Input website:
+helsinki.fi
+Searching..
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="http://www.helsinki.fi/">here</a>.</p>
+</body></html>
+
+› exit
