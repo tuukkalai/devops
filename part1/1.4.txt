@@ -1,4 +1,4 @@
-› d run -it --name search ubuntu sh -c 'echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://[7m$[7mwebsite;'
+› d run -it --name search ubuntu sh -c 'echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'
 Input website:
 helsinki.fi
 Searching..

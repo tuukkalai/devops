@@ -1,0 +1,112 @@
+Script started on 2021-06-02 22:51:21+0300
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;lx9-fuxi118[0m[27m[24m[J
+in [01;36mpart1/[00m on [01;31mmain[00m 
+› [K[235C[01;36m[00m[235D[?1h=[?2004hdd images[?1l>[?2004l
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;lx9-fuxi118[0m[27m[24m[J
+in [01;36mpart1/[00m on [01;31mmain[00m 
+› [K[235C[01;36m[00m[235D[?1h=[?2004hdd image pull devope swithdockeruh/             dockeruh/simple-web-service:ubuntu[?1l>[?2004l
+ubuntu: Pulling from devopsdockeruh/simple-web-service
+
+[1A[2K5d3b2c2d21bb: Pulling fs layer [1B
+[1A[2K3fc2062ea667: Pulling fs layer [1B
+[1A[2K75adf526d75b: Pulling fs layer [1B
+[1A[2K965d4bbb586a: Pulling fs layer [1B
+[1A[2K4f4fb700ef54: Pulling fs layer [1B[1A[2K4f4fb700ef54: Waiting [1B[3A[2K75adf526d75b: Downloading [==================================================>]     162B/162B[3B[3A[2K75adf526d75b: Verifying Checksum [3B[3A[2K75adf526d75b: Download complete [3B[4A[2K3fc2062ea667: Downloading [===================================>               ]     609B/850B[4B[4A[2K3fc2062ea667: Downloading [==================================================>]     850B/850B[4B[4A[2K3fc2062ea667: Verifying Checksum [4B[4A[2K3fc2062ea667: Download complete [4B[5A[2K5d3b2c2d21bb: Downloading [>                                                  ]    294kB/28.57MB[5B[5A[2K5d3b2c2d21bb: Downloading [===>                                               ]   1.76MB/28.57MB[5B[5A[2K5d3b2c2d21bb: Downloading [=====>                                             ]  2.931MB/28.57MB[5B[5A[2K5d3b2c2d21bb: Downloading [=======>                                           ]  4.402MB/28.57MB[5B[5A[2K5d3b2c2d21bb: Downloading [==========>                                        ]  5.868MB/28.57MB[5B[5A[2K5d3b2c2d21bb: Downloading [============>                                      ]  7.334MB/28.57MB[5B[5A[2K5d3b2c2d21bb: Downloading [==============>                                    ]  8.215MB/28.57MB[5B[5A[2K5d3b2c2d21bb: Downloading [===============>                                   ]    9.1MB/28.57MB[5B[1A[2K4f4fb700ef54: Downloading [==================================================>]      32B/32B[1B[1A[2K4f4fb700ef54: Download complete [1B[2A[2K965d4bbb586a: Downloading [>                                                  ]  52.43kB/5.117MB[2B[5A[2K5d3b2c2d21bb: Downloading [=================>                                 ]  10.28MB/28.57MB[5B[5A[2K5d3b2c2d21bb: Downloading [===================>                               ]  11.17MB/28.57MB[5B[2A[2K965d4bbb586a: Downloading [===>                                               ]  342.4kB/5.117MB[2B[2A[2K965d4bbb586a: Downloading [=====>                                             ]  604.6kB/5.117MB[2B[5A[2K5d3b2c2d21bb: Downloading [=====================>                             ]  12.06MB/28.57MB[5B[2A[2K965d4bbb586a: Downloading [==========>                                        ]  1.121MB/5.117MB[2B[5A[2K5d3b2c2d21bb: Downloading [======================>                            ]  12.93MB/28.57MB[5B[2A[2K965d4bbb586a: Downloading [=================>                                 ]  1.776MB/5.117MB[2B[5A[2K5d3b2c2d21bb: Downloading [========================>                          ]  13.82MB/28.57MB[5B[2A[2K965d4bbb586a: Downloading [===================>                               ]  1.973MB/5.117MB[2B[5A[2K5d3b2c2d21bb: Downloading [=========================>                         ]  14.41MB/28.57MB[5B[2A[2K965d4bbb586a: Downloading [==========================>                        ]  2.739MB/5.117MB[2B[5A[2K5d3b2c2d21bb: Downloading [==========================>                        ]  15.29MB/28.57MB[5B[2A[2K965d4bbb586a: Downloading [================================>                  ]  3.328MB/5.117MB[2B[5A[2K5d3b2c2d21bb: Downloading [===========================>                       ]  15.88MB/28.57MB[5B[2A[2K965d4bbb586a: Downloading [======================================>            ]  3.984MB/5.117MB[2B[5A[2K5d3b2c2d21bb: Downloading [============================>                      ]  16.47MB/28.57MB[5B[2A[2K965d4bbb586a: Downloading [=============================================>     ]   4.68MB/5.117MB[2B[2A[2K965d4bbb586a: Download complete [2B[5A[2K5d3b2c2d21bb: Downloading [==============================>                    ]  17.34MB/28.57MB[5B[5A[2K5d3b2c2d21bb: Downloading [================================>                  ]  18.52MB/28.57MB[5B[5A[2K5d3b2c2d21bb: Downloading [==================================>                ]  19.99MB/28.57MB[5B[5A[2K5d3b2c2d21bb: Downloading [=====================================>             ]  21.17MB/28.57MB[5B[5A[2K5d3b2c2d21bb: Downloading [=======================================>           ]  22.35MB/28.57MB[5B[5A[2K5d3b2c2d21bb: Downloading [=========================================>         ]  23.53MB/28.57MB[5B[5A[2K5d3b2c2d21bb: Downloading [===========================================>       ]   24.7MB/28.57MB[5B[5A[2K5d3b2c2d21bb: Downloading [============================================>      ]  25.59MB/28.57MB[5B[5A[2K5d3b2c2d21bb: Downloading [==============================================>    ]  26.77MB/28.57MB[5B[5A[2K5d3b2c2d21bb: Downloading [================================================>  ]  27.94MB/28.57MB[5B[5A[2K5d3b2c2d21bb: Download complete [5B[5A[2K5d3b2c2d21bb: Extracting [>                                                  ]  294.9kB/28.57MB[5B[5A[2K5d3b2c2d21bb: Extracting [=============>                                     ]  7.963MB/28.57MB[5B[5A[2K5d3b2c2d21bb: Extracting [==========================>                        ]  15.34MB/28.57MB[5B[5A[2K5d3b2c2d21bb: Extracting [==========================================>        ]  24.18MB/28.57MB[5B[5A[2K5d3b2c2d21bb: Extracting [=================================================> ]  28.31MB/28.57MB[5B[5A[2K5d3b2c2d21bb: Extracting [==================================================>]  28.57MB/28.57MB[5B[5A[2K5d3b2c2d21bb: Pull complete [5B[4A[2K3fc2062ea667: Extracting [==================================================>]     850B/850B[4B[4A[2K3fc2062ea667: Extracting [==================================================>]     850B/850B[4B[4A[2K3fc2062ea667: Pull complete [4B[3A[2K75adf526d75b: Extracting [==================================================>]     162B/162B[3B[3A[2K75adf526d75b: Extracting [==================================================>]     162B/162B[3B[3A[2K75adf526d75b: Pull complete [3B[2A[2K965d4bbb586a: Extracting [>                                                  ]  65.54kB/5.117MB[2B[2A[2K965d4bbb586a: Extracting [==================================================>]  5.117MB/5.117MB[2B[2A[2K965d4bbb586a: Pull complete [2B[1A[2K4f4fb700ef54: Extracting [==================================================>]      32B/32B[1B[1A[2K4f4fb700ef54: Extracting [==================================================>]      32B/32B[1B[1A[2K4f4fb700ef54: Pull complete [1BDigest: sha256:d44e1dce398732e18c7c2bad9416a072f719af33498302b02929d4c112e88d2a
+Status: Downloaded newer image for devopsdockeruh/simple-web-service:ubuntu
+docker.io/devopsdockeruh/simple-web-service:ubuntu
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;lx9-fuxi118[0m[27m[24m[J
+in [01;36mpart1/[00m on [01;31mmain[00m 
+› [K[235C[01;36m[00m[235D[?1h=[?2004hd image pull devopsdockeruh/simple-web-service:ubuntu      alpine[?1l>[?2004l
+alpine: Pulling from devopsdockeruh/simple-web-service
+
+[1A[2Kba3557a56b15: Pulling fs layer [1B
+[1A[2K1dace236434b: Pulling fs layer [1B
+[1A[2K4f4fb700ef54: Pulling fs layer [1B[3A[2Kba3557a56b15: Downloading [>                                                  ]  29.22kB/2.812MB[3B[1A[2K4f4fb700ef54: Downloading [==================================================>]      32B/32B[1B[1A[2K4f4fb700ef54: Download complete [1B[2A[2K1dace236434b: Downloading [>                                                  ]  52.43kB/5.117MB[2B[3A[2Kba3557a56b15: Downloading [=========>                                         ]  535.8kB/2.812MB[3B[2A[2K1dace236434b: Downloading [=======>                                           ]  728.2kB/5.117MB[2B[3A[2Kba3557a56b15: Downloading [==================>                                ]  1.067MB/2.812MB[3B[2A[2K1dace236434b: Downloading [==============>                                    ]   1.44MB/5.117MB[2B[3A[2Kba3557a56b15: Downloading [=============================>                     ]  1.665MB/2.812MB[3B[2A[2K1dace236434b: Downloading [====================>                              ]  2.096MB/5.117MB[2B[3A[2Kba3557a56b15: Downloading [======================================>            ]  2.186MB/2.812MB[3B[2A[2K1dace236434b: Downloading [===========================>                       ]  2.804MB/5.117MB[2B[3A[2Kba3557a56b15: Downloading [================================================>  ]   2.71MB/2.812MB[3B[2A[2K1dace236434b: Downloading [==================================>                ]  3.517MB/5.117MB[2B[3A[2Kba3557a56b15: Downloading [==================================================>]  2.812MB/2.812MB[3B[3A[2Kba3557a56b15: Verifying Checksum [3B[3A[2Kba3557a56b15: Download complete [3B[3A[2Kba3557a56b15: Extracting [>                                                  ]  32.77kB/2.812MB[3B[3A[2Kba3557a56b15: Extracting [==================================================>]  2.812MB/2.812MB[3B[2A[2K1dace236434b: Downloading [=============================================>     ]   4.68MB/5.117MB[2B[3A[2Kba3557a56b15: Pull complete [3B[2A[2K1dace236434b: Verifying Checksum [2B[2A[2K1dace236434b: Download complete [2B[2A[2K1dace236434b: Extracting [>                                                  ]  65.54kB/5.117MB[2B[2A[2K1dace236434b: Extracting [==================================================>]  5.117MB/5.117MB[2B[2A[2K1dace236434b: Pull complete [2B[1A[2K4f4fb700ef54: Extracting [==================================================>]      32B/32B[1B[1A[2K4f4fb700ef54: Extracting [==================================================>]      32B/32B[1B[1A[2K4f4fb700ef54: Pull complete [1BDigest: sha256:dd4d367476f86b7d7579d3379fe446ae5dfce25480903fb0966fc2e5257e0543
+Status: Downloaded newer image for devopsdockeruh/simple-web-service:alpine
+docker.io/devopsdockeruh/simple-web-service:alpine
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;lx9-fuxi118[0m[27m[24m[J
+in [01;36mpart1/[00m on [01;31mmain[00m 
+› [K[235C[01;36m[00m[235D[?1h=[?2004hdd images[?1l>[?2004l
+REPOSITORY                          TAG                 IMAGE ID            CREATED             SIZE
+devopsdockeruh/simple-web-service   ubuntu              4e3362e907d5        2 months ago        83MB
+devopsdockeruh/simple-web-service   alpine              fd312adc88e0        2 months ago        15.7MB
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;lx9-fuxi118[0m[27m[24m[J
+in [01;36mpart1/[00m on [01;31mmain[00m 
+› [K[235C[01;36m[00m[235D[?1h=[?2004hdd run    d sta   start fd312[?1l>[?2004l
+Error response from daemon: No such container: fd312
+Error: failed to start containers: fd312
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;lx9-fuxi118[0m[27m[24m[J
+in [01;36mpart1/[00m on [01;31mmain[00m 
+› [K[235C[01;36m[00m[235D[?1h=[?2004hdd run df  fd312[?1l>[?2004l
+Starting log output
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+^C[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;lx9-fuxi118[0m[27m[24m[J
+in [01;36mpart1/[00m on [01;31mmain[00m 
+› [K[235C[01;36m[00m[235D[?1h=[?2004hdd start     d ps -a[?1l>[?2004l
+CONTAINER ID        IMAGE               COMMAND                 CREATED             STATUS                     PORTS               NAMES
+f3328a4a015f        fd312               "/usr/src/app/server"   9 seconds ago       Exited (2) 6 seconds ago                       inspiring_galois
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;lx9-fuxi118[0m[27m[24m[J
+in [01;36mpart1/[00m on [01;31mmain[00m 
+› [K[235C[01;36m[00m[235D[?1h=[?2004hdd start -d f332[?1l>[?2004l
+unknown shorthand flag: 'd' in -d
+See 'docker start --help'.
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;lx9-fuxi118[0m[27m[24m[J
+in [01;36mpart1/[00m on [01;31mmain[00m 
+› [K[235C[01;36m[00m[235D[?1h=[?2004hd start -d f332 f332  f332 f332 [?1l>[?2004l
+f332
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;lx9-fuxi118[0m[27m[24m[J
+in [01;36mpart1/[00m on [01;31mmain[00m 
+› [K[235C[01;36m[00m[235D[?1h=[?2004hdd ps -a[?1l>[?2004l
+CONTAINER ID        IMAGE               COMMAND                 CREATED             STATUS              PORTS               NAMES
+f3328a4a015f        fd312               "/usr/src/app/server"   31 seconds ago      Up 3 seconds                            inspiring_galois
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;lx9-fuxi118[0m[27m[24m[J
+in [01;36mpart1/[00m on [01;31mmain[00m 
+› [K[235C[01;36m[00m[235D[?1h=[?2004hdd -it    ec xec -it f332 sh -c 'ls -alä '[?1l>[?2004l
+total 9868
+drwxr-xr-x    1 root     root          4096 Jun  2 19:52 [1;34m.[m
+drwxr-xr-x    1 root     root          4096 Mar 14 14:14 [1;34m..[m
+-rwxr-xr-x    1 root     root      10085718 Mar 14 14:14 [1;32mserver[m
+-rw-r--r--    1 root     root           795 Jun  2 19:53 [0;0mtext.log[m
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;lx9-fuxi118[0m[27m[24m[J
+in [01;36mpart1/[00m on [01;31mmain[00m 
+› [K[235C[01;36m[00m[235D[?1h=[?2004hd exec -it f332 sh -c 'ls -al'' ' ' ' ' ' c'a't' 't'e's't'' ' x't'.'l'o'g'[?1l>[?2004l
+2021-06-02 19:53:00 +0000 UTC
+2021-06-02 19:53:02 +0000 UTC
+2021-06-02 19:53:27 +0000 UTC
+2021-06-02 19:53:29 +0000 UTC
+2021-06-02 19:53:31 +0000 UTC
+2021-06-02 19:53:33 +0000 UTC
+2021-06-02 19:53:35 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2021-06-02 19:53:37 +0000 UTC
+2021-06-02 19:53:39 +0000 UTC
+2021-06-02 19:53:41 +0000 UTC
+2021-06-02 19:53:43 +0000 UTC
+2021-06-02 19:53:45 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2021-06-02 19:53:47 +0000 UTC
+2021-06-02 19:53:49 +0000 UTC
+2021-06-02 19:53:51 +0000 UTC
+2021-06-02 19:53:53 +0000 UTC
+2021-06-02 19:53:55 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2021-06-02 19:53:57 +0000 UTC
+2021-06-02 19:53:59 +0000 UTC
+2021-06-02 19:54:01 +0000 UTC
+2021-06-02 19:54:03 +0000 UTC
+2021-06-02 19:54:05 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2021-06-02 19:54:07 +0000 UTC
+2021-06-02 19:54:09 +0000 UTC
+2021-06-02 19:54:11 +0000 UTC
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;lx9-fuxi118[0m[27m[24m[J
+in [01;36mpart1/[00m on [01;31mmain[00m 
+› [K[235C[01;36m[00m[235D[?1h=[?2004hdd stop f32 32[?1l>[?2004l
+f332
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;lx9-fuxi118[0m[27m[24m[J
+in [01;36mpart1/[00m on [01;31mmain[00m 
+› [K[235C[01;36m[00m[235D[?1h=[?2004hd eexit[?1l>[?2004l
+
+Script done on 2021-06-02 22:54:31+0300
