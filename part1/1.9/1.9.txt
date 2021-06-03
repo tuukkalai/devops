@@ -1,0 +1,21 @@
+Script started on 2021-06-03 22:53:41+0300
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;lx9-fuxi118[0m[27m[24m[J
+in [01;36m1.9/[00m on [01;31mmain[00m 
+› [K[235C[01;36m[00m[235D[?1h=[?2004httouch tet   text.log[?1l>[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;lx9-fuxi118[0m[27m[24m[J
+in [01;36m1.9/[00m on [01;31mmain[00m 
+› [K[235C[01;36m[00m[235D[?1h=[?2004htouch text.log[14Dscript        [8Dcd 1.9mkdir 1.9[9Dl        [8Dcd part1[8D..      rm text.log[11Dbat Dockerfile[10Dtext.log  [12Dexit        [8Dd run -v $(pwd)/text.log:/usr/src/app/text.log devopsdockeruh/simple-web-service[80Drm -rf text.log                                                                 [65D[15Dd run -v $(pwd)/text.log:/usr/src/app/text.log devopsdockeruh/simple-web-service[?1l>[?2004l
+Starting log output
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;lx9-fuxi118[0m[27m[24m[J
+in [01;36m1.9/[00m on [01;31mmain[00m 
+› [K[235C[01;36m[00m[235D[?1h=[?2004heexit[?1l>[?2004l
+
+Script done on 2021-06-03 23:02:43+0300
