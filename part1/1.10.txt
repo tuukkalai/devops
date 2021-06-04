@@ -1,0 +1,13 @@
+Script started on Fri Jun  4 23:38:47 2021
+[1m[7m%[27m[1m[0m                                                                                                                                            ]2;90310000il254]7;file://90310000il254.local/Users/laittu1/Documents/koulu/devops/part1[0m[27m[24m[J
+[1;92m🔋  3:47 [0min [01;36mpart1/[00m on [01;31mmain[00m 
+› [K[137C[01;36m[00m[137D[?2004hdd run -d -p 8080:8080 devp opsdockeruh/simple_we   -web-seri vice server[?2004l
+236f72dfa3930ff8b3c469053f680251fd95b7efb6906884671a9a54c7d8fb62
+[1m[7m%[27m[1m[0m                                                                                                                                            ]2;90310000il254]7;file://90310000il254.local/Users/laittu1/Documents/koulu/devops/part1[0m[27m[24m[J
+[1;92m🔋  3:47 [0min [01;36mpart1/[00m on [01;31mmain[00m 
+› [K[137C[01;36m[00m[137D[?2004hccurl localhost:8080[?2004l
+{"message":"You connected to the following path: /","path":"/"}[1m[7m%[27m[1m[0m                                                                                                                                            ]2;90310000il254]7;file://90310000il254.local/Users/laittu1/Documents/koulu/devops/part1[0m[27m[24m[J
+[1;92m🔋  3:47 [0min [01;36mpart1/[00m on [01;31mmain[00m 
+› [K[137C[01;36m[00m[137D[?2004heexit[?2004l
+
+Script done on Fri Jun  4 23:39:29 2021
