@@ -1,8 +1,7 @@
-Script started on 2021-06-02 23:18:00+0300
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;lx9-fuxi118[0m[27m[24m[J
-in [01;36m1.7/[00m on [01;31mmain[00m 
-› [K[235C[01;36m[00m[235D[?1h=[?2004hdd build . -t web-server[?1l>[?2004l
-Sending build context to Docker daemon   2.56kB
+› d build . -t web-server
+
+Sending build context to Docker daemon   2.56kB
+
 Step 1/2 : FROM devopsdockeruh/simple-web-service:alpine
  ---> fd312adc88e0
 Step 2/2 : CMD server
@@ -11,9 +10,9 @@ Removing intermediate container 9d4235ac6c79
  ---> 8cb4e25e3d64
 Successfully built 8cb4e25e3d64
 Successfully tagged web-server:latest
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;lx9-fuxi118[0m[27m[24m[J
-in [01;36m1.7/[00m on [01;31mmain[00m 
-› [K[235C[01;36m[00m[235D[?1h=[?2004hdd run web-server[?1l>[?2004l
+ 
+› d run web-server
+
 [GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
 
 [GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
@@ -22,8 +21,3 @@ in [01;36m1.7/[00m on [01;31mmain[00m
 
 [GIN-debug] GET    /*path                    --> server.Start.func1 (3 handlers)
 [GIN-debug] Listening and serving HTTP on :8080
-^C[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;lx9-fuxi118[0m[27m[24m[J
-in [01;36m1.7/[00m on [01;31mmain[00m 
-› [K[235C[01;36m[00m[235D[?1h=[?2004heexit[?1l>[?2004l
-
-Script done on 2021-06-02 23:18:52+0300
