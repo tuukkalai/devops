@@ -1,1 +1,0 @@
-> d build . -t backend-proj && d run -d -p 8080:8080 backend-proj
