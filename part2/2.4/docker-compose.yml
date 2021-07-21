@@ -1,0 +1,22 @@
+version: '3.5'
+
+services:
+    front:
+        image: dcfront
+        ports:
+            - 5000:5000
+        container_name: dc-front
+
+    back:
+        image: dcback
+        ports:
+            - 8080:8080
+        container_name: dc-back
+        environment:
+            REDIS_HOST: dc-redis
+
+    redis:
+        image: redis
+        ports:
+            - 6379:6379
+        container_name: dc-redis
