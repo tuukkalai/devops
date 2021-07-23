@@ -1,0 +1,22 @@
+version: '3.5'
+
+services:
+    front:
+        image: dcfront
+        ports:
+            - 5000:5000
+        container_name: dc-front
+
+    back:
+        image: dcback
+        ports:
+            - 8080:8080
+        container_name: dc-back
+        environment:
+            POSTGRES_PASSWORD: secretpassword
+
+    psql:
+        image: postgres:13.3-alpine
+        restart: unless-stopped
+        environment:
+            POSTGRES_PASSWORD: secretpassword
