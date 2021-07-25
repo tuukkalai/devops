@@ -14,9 +14,18 @@ services:
         container_name: dc-back
         environment:
             POSTGRES_PASSWORD: secretpassword
+            POSTGRES_HOST: psql-db
+            REDIS_HOST: redis-db
 
     psql:
         image: postgres:13.3-alpine
         restart: unless-stopped
+        container_name: psql-db
         environment:
             POSTGRES_PASSWORD: secretpassword
+
+    redis:
+        image: redis
+        ports:
+            - 6379:6379
+        container_name: redis-db
