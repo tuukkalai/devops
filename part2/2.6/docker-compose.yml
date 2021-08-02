@@ -1,35 +1,40 @@
 version: '3.5'
 
 services:
-    front:
+    dcfront:
         image: dcfront
-        build: .
         ports:
             - 5000:5000
-        container_name: dc-front
-    back:
+        container_name: dcfront
+
+    dcback:
         image: dcback
-        build: .
         ports:
             - 8080:8080
-        container_name: dc-back
+        container_name: dcback
         environment:
             - POSTGRES_USER=postgris
             - POSTGRES_PASSWORD=secretpassword
-            - POSTGRES_HOST=psql
-            - REDIS_HOST=redis
+            - POSTGRES_HOST=psqldb
+            - REDIS_HOST=redisdb
         depends_on:
-            - psql
-    psql:
+            - psqldb
+
+    psqldb:
         image: postgres:13.3-alpine
         restart: unless-stopped
-        container_name: psql-db
+        container_name: psqldb
         environment:
             - POSTGRES_USER=postgris
             - POSTGRES_PASSWORD=secretpassword
-    redis:
+        volumes:
+            - database:/var/lib/postgresql/data
+
+    redisdb:
         image: redis:latest
         ports:
             - 6379:6379
-        container_name: redis-db
+        container_name: redisdb
 
+volumes:
+    database:
