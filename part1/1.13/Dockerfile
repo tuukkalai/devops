@@ -4,6 +4,8 @@ WORKDIR /go/src/app
 COPY /example-backend .
 EXPOSE 8080
 
+ENV REQUEST_ORIGIN=http://localhost:5000
+
 RUN go build
 
 CMD ./server
