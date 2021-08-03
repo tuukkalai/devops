@@ -1,0 +1,50 @@
+version: '3.5'
+
+services:
+    dcfront:
+        image: dcfront
+        ports:
+            - 5000:5000
+        container_name: dcfront
+
+    dcback:
+        image: dcback
+        ports:
+            - 8080:8080
+        container_name: dcback
+        environment:
+            - POSTGRES_USER=postgris
+            - POSTGRES_PASSWORD=secretpassword
+            - POSTGRES_HOST=psqldb
+            - REDIS_HOST=redisdb
+            - REQUEST_ORIGIN=http://localhost
+        depends_on:
+            - psqldb
+
+    psqldb:
+        image: postgres:13.3-alpine
+        restart: unless-stopped
+        container_name: psqldb
+        environment:
+            - POSTGRES_USER=postgris
+            - POSTGRES_PASSWORD=secretpassword
+        volumes:
+            - database:/var/lib/postgresql/data
+
+    redisdb:
+        image: redis:latest
+        ports:
+            - 6379:6379
+        container_name: redisdb
+
+    nginx:
+        image: nginx
+        volumes:
+            - ./nginx.conf:/etc/nginx/nginx.conf
+        ports:
+            - 80:80
+        depends_on:
+            - dcback
+
+volumes:
+    database:
