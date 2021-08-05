@@ -1,0 +1,15 @@
+version: '3.5'
+
+services:
+    tictactoe:
+        build: ./tic-tac-toe
+        command: npm start
+        ports:
+            - 3000:3000
+        volumes:
+            - ./tic-tac-toe:/usr/src/app/tic-tac-toe
+            - ./tic-tac-toe/node_modules:/usr/src/app/tic-tac-toe/node_modules
+        container_name: tic-tac-toe
+
+volumes:
+    node_modules:
