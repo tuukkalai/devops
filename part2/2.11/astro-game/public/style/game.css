@@ -1,13 +1,8 @@
-body {
-  font: 16px "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin: 20px;
-}
-
-ol, ul {
+.ol, ul {
   padding-left: 0;
 }
 
-.board-row:after {
+board-row:after {
   clear: both;
   content: "";
   display: table;

@@ -2,14 +2,14 @@ version: '3.5'
 
 services:
     tictactoe:
-        build: ./tic-tac-toe
+        build: ./astro-game
         command: npm start
         ports:
             - 3000:3000
         volumes:
-            - ./tic-tac-toe:/usr/src/app/tic-tac-toe
-            - ./tic-tac-toe/node_modules:/usr/src/app/tic-tac-toe/node_modules
-        container_name: tic-tac-toe
+            - ./astro-game:/usr/src/app/astro-game
+            - ./astro-game/node_modules:/usr/src/app/astro-game/node_modules
+        container_name: astro-game
 
 volumes:
     node_modules:

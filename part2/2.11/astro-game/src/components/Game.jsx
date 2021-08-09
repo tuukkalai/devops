@@ -1,6 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
+import '/style/game.css';
 
 // Functional Component
 function Square(props) {
@@ -189,9 +188,8 @@ class Game extends React.Component {
     const history = this.state.history;
     const current = history[this.state.stepNumber];
     const winner = calculateWinner(current.squares);
-    console.log('Current.squares: ' + current.squares);
-    console.log('stepNumber: ' + this.state.stepNumber);
-
+    // console.log('Current.squares: ' + current.squares);
+    // console.log('stepNumber: ' + this.state.stepNumber);
 
     const moves = history.map((step, move) => {
       const desc = move ? 'Go to move #' + move : 'Go to game start';
@@ -213,7 +211,6 @@ class Game extends React.Component {
 
     return (
     <>
-        <h1>Fairly stupid tic-tac-toe</h1>
       <div className="game">
         <div className="game-board">
           <Board
@@ -231,6 +228,7 @@ class Game extends React.Component {
   }
 }
 
+// The actual dump part. How to check all the possibilities to have 5 in a row?
 function calculateWinner(squares) {
   const lines = [
     // ROWS
@@ -278,7 +276,4 @@ function calculateWinner(squares) {
   return null;
 }
 
-ReactDOM.render(
-  <Game />,
-  document.getElementById('root')
-);
+export default Game;
