@@ -1,15 +1,15 @@
-version: '3.5'
+version: '3.7'
 
 services:
-    tictactoe:
-        build: ./astro-game
-        command: npm start
-        ports:
-            - 3000:3000
-        volumes:
-            - ./astro-game:/usr/src/app/astro-game
-            - ./astro-game/node_modules:/usr/src/app/astro-game/node_modules
-        container_name: astro-game
+  ts-dev-env:
+    build: ./app
+    command: npm start
+    ports: 
+      - 3000:3000
+    volumes:
+      - ./app:/usr/src/app
+      - ./app/node_modules:/usr/src/app/node_modules
+    container_name: ts-dev-env
 
 volumes:
-    node_modules:
+  node_modules:
