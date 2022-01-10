@@ -1,0 +1,16 @@
+version: '3.5'
+
+services:
+    front:
+        build: ./front
+        image: front
+        ports:
+            - 3000:5000
+        container_name: 3-3-front
+
+    back:
+        build: ./back
+        image: back
+        ports:
+            - 8080:8080
+        container_name: 3-3-back
