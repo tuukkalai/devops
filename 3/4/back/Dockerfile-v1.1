@@ -1,0 +1,20 @@
+FROM ubuntu:18.04
+
+EXPOSE 8080
+ENV REQUEST_ORIGIN=http://localhost:5000
+ENV PATH="${PATH}:/usr/local/go/bin"
+
+WORKDIR /go/src/app
+COPY . .
+
+RUN apt update
+RUN apt install -y curl
+RUN rm -rf /usr/local/go
+RUN curl -sL https://go.dev/dl/go1.16.13.linux-amd64.tar.gz --output ./go1.16.13.linux-amd64.tar.gz
+RUN tar -C /usr/local -xzf go1.16.13.linux-amd64.tar.gz
+RUN useradd -m backuser
+RUN go build
+
+USER backuser
+
+CMD ./server
