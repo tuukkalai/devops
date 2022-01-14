@@ -2,7 +2,7 @@ FROM ubuntu
 
 WORKDIR /usr/src/app
 
-COPY . .
+COPY ./example-frontend .
 EXPOSE 5000
 ENV REACT_APP_BACKEND_URL=http://localhost:8080
 

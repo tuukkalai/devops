@@ -1,40 +1,55 @@
-# example-frontend
+# 3.4. Frontend - Image optimization
 
-This project is created to help learn docker configurations for frontend projects. The README starting from "Prerequisites" is written without Docker in mind so student has to figure out how to construct their configuration based on the README. However, there are some additional helpers added in the README and in the exercise description.
+```sh
+docker images | grep front
 
-> Notice, that all the information are not needed in all the exercises. Don't just copypaste.
-
-# Prerequisites
-
-Install [node](https://nodejs.org/en/download/). 
-
-Example node install instructions for LTS node 14.x:
-```
-curl -sL https://deb.nodesource.com/setup_14.x | bash
-sudo apt install -y nodejs
+front34      1.0       ba842dfe80d7   4 minutes ago    487MB
+front34      1.2       2993ad25b4d8   13 hours ago     447MB
 ```
 
-Check your install with `node -v && npm -v`
+## Before optimization
 
-Install all packages with `npm install`
+[Dockerfile-v1.0](./Dockerfile-v1.0)
 
-# Starting in production mode
+```sh
+docker image history front34:1.0
 
-## Exercise 1.12 -> to run the project
+IMAGE          CREATED       CREATED BY                                      SIZE      COMMENT
+c0809ddb1761   8 hours ago   CMD ["serve" "-s" "-l" "5000" "build"]          0B        buildkit.dockerfile.v0
+<missing>      8 hours ago   USER frontuser                                  0B        buildkit.dockerfile.v0
+<missing>      8 hours ago   RUN /bin/sh -c chown frontuser . # buildkit     0B        buildkit.dockerfile.v0
+<missing>      8 hours ago   RUN /bin/sh -c useradd -m frontuser # buildk…   334kB     buildkit.dockerfile.v0
+<missing>      8 hours ago   RUN /bin/sh -c npm run build # buildkit         8.68MB    buildkit.dockerfile.v0
+<missing>      8 hours ago   RUN /bin/sh -c npm install -g serve # buildk…   7.1MB     buildkit.dockerfile.v0
+<missing>      8 hours ago   RUN /bin/sh -c npm install # buildkit           210MB     buildkit.dockerfile.v0
+<missing>      8 hours ago   RUN /bin/sh -c apt install -y nodejs # build…   97.6MB    buildkit.dockerfile.v0
+<missing>      8 hours ago   RUN /bin/sh -c curl -sL https://deb.nodesour…   40.7MB    buildkit.dockerfile.v0
+<missing>      8 hours ago   RUN /bin/sh -c apt install -y curl # buildkit   16.2MB    buildkit.dockerfile.v0
+<missing>      8 hours ago   RUN /bin/sh -c apt update # buildkit            32.8MB    buildkit.dockerfile.v0
+<missing>      8 hours ago   ENV REACT_APP_BACKEND_URL=http://localhost:8…   0B        buildkit.dockerfile.v0
+<missing>      8 hours ago   EXPOSE map[5000/tcp:{}]                         0B        buildkit.dockerfile.v0
+<missing>      8 hours ago   COPY ./example-frontend . # buildkit            708kB     buildkit.dockerfile.v0
+<missing>      4 days ago    WORKDIR /usr/src/app                            0B        buildkit.dockerfile.v0
+<missing>      7 days ago    /bin/sh -c #(nop)  CMD ["bash"]                 0B        
+<missing>      7 days ago    /bin/sh -c #(nop) ADD file:122ad323412c2e70b…   72.8MB    
+```
 
-First you need to build the static files with `npm run build`
+## After optimization
 
-This will generate them into `build` folder.
+[Dockerfile-v1.2](./Dockerfile-v1.2)
 
-An example for serving static files:
+```sh
+docker image history front34:1.2
 
-Use npm package called serve to serve the project in port 5000:
-- install: `npm install -g serve`
-- serve: `serve -s -l 5000 build`
+IMAGE          CREATED       CREATED BY                                      SIZE      COMMENT
+40bf1cff9aba   8 hours ago   CMD ["serve" "-s" "-l" "5000" "build"]          0B        buildkit.dockerfile.v0
+<missing>      8 hours ago   USER frontuser                                  0B        buildkit.dockerfile.v0
+<missing>      8 hours ago   RUN /bin/sh -c apt update &&     apt install…   373MB     buildkit.dockerfile.v0
+<missing>      8 hours ago   ENV REACT_APP_BACKEND_URL=http://localhost:8…   0B        buildkit.dockerfile.v0
+<missing>      8 hours ago   EXPOSE map[5000/tcp:{}]                         0B        buildkit.dockerfile.v0
+<missing>      9 hours ago   COPY ./example-frontend . # buildkit            708kB     buildkit.dockerfile.v0
+<missing>      4 days ago    WORKDIR /usr/src/app                            0B        buildkit.dockerfile.v0
+<missing>      7 days ago    /bin/sh -c #(nop)  CMD ["bash"]                 0B        
+<missing>      7 days ago    /bin/sh -c #(nop) ADD file:122ad323412c2e70b…   72.8MB    
+```
 
-Test that the project is running by going to <http://localhost:5000>
-
-## Exercise 1.14 -> to connect to backend
-
-By default the expected path to backend is /api. This is where the application will send requests. 
-To manually configure api path run with `REACT_APP_BACKEND_URL` environment value set, for example `REACT_APP_BACKEND_URL=http://example.com npm run build`
