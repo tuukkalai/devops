@@ -1,0 +1,16 @@
+FROM alpine:3.15.0
+
+EXPOSE 8080
+ENV REQUEST_ORIGIN=http://localhost:5000
+ENV PATH="${PATH}:/usr/local/go/bin"
+
+WORKDIR /go/src/app
+COPY ./example-backend .
+
+RUN apk add --no-cache go && \
+    adduser -D backuser && \
+    go build
+
+USER backuser
+
+CMD ./server
