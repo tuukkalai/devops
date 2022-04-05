@@ -1,3 +1,8 @@
+# Prerequisites
+
+To build Dockerfiles, copy `example-front` from examples to current folder
+(same where this README-file is located).
+
 # Different FROMs
 
 ```sh
