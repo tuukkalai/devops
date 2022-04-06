@@ -2,14 +2,23 @@ version: '3.7'
 
 services:
   ts-dev-env:
-    build: ./app
+    build: ./front
     command: npm start
+    environment:
+      - REACT_APP_BACKEND_URL=http://0.0.0.0:8080
     ports: 
       - 3000:3000
     volumes:
-      - ./app:/usr/src/app
-      - ./app/node_modules:/usr/src/app/node_modules
+      - ./front:/usr/src/front
+      - ./front/node_modules:/usr/src/front/node_modules
     container_name: ts-dev-env
+
+  flask-back:
+    build: ./back
+    command: gunicorn -w 4 -b 0.0.0.0:8080 app:app
+    ports:
+      - 8080:8080
+    container_name: flask-back
 
 volumes:
   node_modules:
