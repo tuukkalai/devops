@@ -7,5 +7,5 @@ def hello_world():
     return "<p>Hello, World!</p>"
 
 @app.route("/ping")
-def hello_world():
+def ping():
     return "pong"

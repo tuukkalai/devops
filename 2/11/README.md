@@ -9,6 +9,5 @@ Dockerized create-react-app's Typescript template. Fairly raw, not an full appli
 Running the following commands produce a development environment for React Typescript app.
 
 ```sh
-git clone https://github.com/tuukkalai/ts-dev-env.git front
 docker-compose up
 ```

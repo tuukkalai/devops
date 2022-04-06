@@ -3,14 +3,9 @@ version: '3.7'
 services:
   ts-dev-env:
     build: ./front
-    command: npm start
-    environment:
-      - REACT_APP_BACKEND_URL=http://0.0.0.0:8080
+    command: serve -s -l 5000 build
     ports: 
-      - 3000:3000
-    volumes:
-      - ./front:/usr/src/front
-      - ./front/node_modules:/usr/src/front/node_modules
+      - 5000:5000
     container_name: ts-dev-env
 
   flask-back:
