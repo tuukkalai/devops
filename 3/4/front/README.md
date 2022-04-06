@@ -9,7 +9,7 @@ front34      1.2       2993ad25b4d8   13 hours ago     447MB
 
 ## Before optimization
 
-[Dockerfile-v1.0](./Dockerfile-v1.0)
+[v1.0.Dockerfile](./v1.0.Dockerfile)
 
 ```sh
 docker image history front34:1.0
@@ -36,7 +36,7 @@ c0809ddb1761   8 hours ago   CMD ["serve" "-s" "-l" "5000" "build"]          0B 
 
 ## After optimization
 
-[Dockerfile-v1.2](./Dockerfile-v1.2)
+[v1.2.Dockerfile](./v1.2.Dockerfile)
 
 ```sh
 docker image history front34:1.2
