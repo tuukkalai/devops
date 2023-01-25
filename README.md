@@ -12,3 +12,13 @@ These are aliases for `docker` and `docker-compose` in my current system.
 alias d='docker $*'
 alias d-c='docker-compose $*'
 ```
+
+## Material applications
+
+Some of the assignments rely on applications provided in material. Pull latest
+apps to project root with
+
+```sh
+git clone https://github.com/docker-hy/material-applications.git
+```
+
